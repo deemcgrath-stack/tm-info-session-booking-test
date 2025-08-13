@@ -57,4 +57,45 @@
             margin: 20px 0;
         }
         
-        .feature-li
+        .feature-list li {
+            margin: 10px 0;
+            color: #555;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dee Testing TM Info Session Booking</h1>
+        <p>Welcome! Use the chat widget to find and book available TM info sessions.</p>
+        
+        <div class="features">
+            <p><strong>Try asking:</strong></p>
+            <ul class="feature-list">
+                <li>"What info sessions are available this week?"</li>
+                <li>"Can I book an online info session?"</li>
+                <li>"Tell me about TM info sessions"</li>
+                <li>"Book an info session for me"</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+      window.intercomSettings = {
+        api_base: "https://api-iam.eu.intercom.io",
+        app_id: "ed5jgt8o",
+      };
+    </script>
+    <script>
+      (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/ed5jgt8o';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+    </script>
+</body>
+</html>
